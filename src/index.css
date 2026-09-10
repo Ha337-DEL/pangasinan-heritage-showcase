@@ -1,0 +1,131 @@
+/* =========================================================
+   Pangasinan Heritage — Design Tokens
+   Palette drawn from the province itself: the teal of Lingayen
+   Gulf at dusk, capiz-shell parchment of old church windows,
+   sun-baked limestone, and the brick-tile roofs of coastal towns.
+   ========================================================= */
+:root {
+  /* Color */
+  --ink: #16231f;          /* near-black, warmed with green-teal, for text */
+  --ink-soft: #3c4b46;      /* secondary text */
+  --bone: #f4efe3;         /* capiz-parchment background */
+  --bone-dim: #eae2d0;      /* recessed panels / alt sections */
+  --gulf: #2c5559;          /* deep gulf teal — primary structural color */
+  --gulf-deep: #17383c;     /* darkest teal, footer / hero overlays */
+  --sand: #cdb48d;         /* adobe / sand accent, borders & dividers */
+  --brick: #9c4a2e;         /* muted terracotta — sparing accent only */
+  --gold: #c08a34;          /* sunset gold — sparing accent only */
+  --line: rgba(22, 35, 31, 0.14);
+
+  /* Type */
+  --font-display: "Fraunces", "Iowan Old Style", Georgia, serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Scale (major third-ish, editorial) */
+  --step-1: clamp(0.9rem, 0.86rem + 0.2vw, 1rem);
+  --step-2: clamp(1.05rem, 1rem + 0.3vw, 1.2rem);
+  --step-3: clamp(1.4rem, 1.2rem + 1vw, 1.85rem);
+  --step-4: clamp(2rem, 1.6rem + 2vw, 2.75rem);
+  --step-5: clamp(2.6rem, 2rem + 3.2vw, 4.2rem);
+
+  /* Layout */
+  --gutter: clamp(1.25rem, 4vw, 3.5rem);
+  --content-max: 1180px;
+  --radius: 2px; /* deliberately near-square — museum plaque, not app card */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--bone);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: var(--step-1);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  line-height: 1.15;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+p {
+  margin: 0;
+  max-width: 62ch;
+}
+
+:focus-visible {
+  outline: 2px solid var(--brick);
+  outline-offset: 3px;
+}
+
+.wrap {
+  max-width: var(--content-max);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.section {
+  padding-block: clamp(3.5rem, 8vw, 6.5rem);
+}
+
+.section-label {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--step-2);
+  color: var(--brick);
+  margin-bottom: 0.6rem;
+  display: block;
+}
+
+.divider {
+  height: 1px;
+  background: var(--line);
+  border: none;
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}

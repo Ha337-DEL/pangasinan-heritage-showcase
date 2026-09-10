@@ -1,0 +1,41 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.6rem;
+  font-size: var(--step-1);
+  font-weight: 500;
+  border-radius: var(--radius);
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn--primary {
+  background: var(--brick);
+  color: var(--bone);
+}
+.btn--primary:hover {
+  background: #7f3b23;
+}
+
+.btn--secondary {
+  background: transparent;
+  color: var(--bone);
+  border-color: rgba(244, 239, 227, 0.5);
+}
+.btn--secondary:hover {
+  border-color: var(--bone);
+  background: rgba(244, 239, 227, 0.08);
+}
+
+.btn--ghost {
+  background: transparent;
+  color: var(--ink);
+  border-color: var(--line);
+  padding: 0.7rem 1.3rem;
+}
+.btn--ghost:hover {
+  border-color: var(--ink);
+}

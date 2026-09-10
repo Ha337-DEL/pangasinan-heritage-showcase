@@ -1,0 +1,25 @@
+.heritage-card {
+  border-top: 1px solid var(--line);
+  padding-top: 1.25rem;
+}
+
+.heritage-card__body {
+  padding-top: 1rem;
+}
+
+.heritage-card__era {
+  font-size: 0.78rem;
+  color: var(--brick);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.heritage-card h3 {
+  margin-top: 0.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.heritage-card p {
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}

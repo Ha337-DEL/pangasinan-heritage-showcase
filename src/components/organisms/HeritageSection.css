@@ -1,0 +1,33 @@
+.heritage-section {
+  background: var(--bone);
+}
+
+.heritage-section__head {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.heritage-section__head h2 {
+  max-width: 20ch;
+}
+
+.heritage-section__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 2rem 1.75rem;
+}
+
+.heritage-section__empty {
+  color: var(--ink-soft);
+  font-style: italic;
+}
+
+@media (min-width: 760px) {
+  .heritage-section__head {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}

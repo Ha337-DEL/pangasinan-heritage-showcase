@@ -1,0 +1,8 @@
+.heading--h1 { font-size: var(--step-5); }
+.heading--h2 { font-size: var(--step-4); }
+.heading--h3 { font-size: var(--step-3); }
+.heading--h4 { font-size: var(--step-2); font-family: var(--font-body); font-weight: 600; }
+
+.heading--italic {
+  font-style: italic;
+}

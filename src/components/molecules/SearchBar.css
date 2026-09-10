@@ -1,0 +1,23 @@
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  border: 1px solid var(--line);
+  padding: 0.6rem 1rem;
+  max-width: 320px;
+  color: var(--ink-soft);
+}
+
+.search-bar input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 0.95rem;
+  font-family: var(--font-body);
+  color: var(--ink);
+  width: 100%;
+}
+
+.search-bar input::placeholder {
+  color: var(--ink-soft);
+}

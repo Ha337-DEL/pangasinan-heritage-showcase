@@ -1,0 +1,29 @@
+.about__grid {
+  display: grid;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.about__text p {
+  color: var(--ink-soft);
+}
+
+.about__text h2 {
+  margin-bottom: 0.4rem;
+}
+
+@media (min-width: 860px) {
+  .about__grid {
+    grid-template-columns: 1.1fr 0.8fr;
+    gap: 4rem;
+  }
+  .about__image {
+    order: 2;
+  }
+}
