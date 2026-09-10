@@ -20,7 +20,7 @@ export const heritageSites = [
     id: 'bolinao-lighthouse',
     name: 'Bolinao Lighthouse',
     era: 'Built 1905',
-    image: '/src/assets/bolinao-lighthouse.webp',
+    image: '/src/assets//bolinao-lighthouse.webp',
     description:
       'Perched on Cape Bolinao, this American-era lighthouse is one of the tallest in the Philippines. Its beam has guided ships along the West Philippine Sea for over a century, and its hilltop grounds remain a favored lookout over the coastline.',
   },
