@@ -20,7 +20,7 @@ export default function AboutSection() {
           ))}
         </div>
         <div className="about__image">
-          <Image src={about.image} alt="Coastal view in Pangasinan province" ratio="3 / 4" />
+         <img src="/about-pangasinan.webp" alt="About Pangasinan" />
         </div>
       </div>
     </section>
