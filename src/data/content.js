@@ -20,7 +20,7 @@ export const heritageSites = [
     id: 'bolinao-lighthouse',
     name: 'Bolinao Lighthouse',
     era: 'Built 1905',
-    image: '/src/assets//bolinao-lighthouse.webp',
+    image: '/bolinao-lighthouse.webp',
     description:
       'Perched on Cape Bolinao, this American-era lighthouse is one of the tallest in the Philippines. Its beam has guided ships along the West Philippine Sea for over a century, and its hilltop grounds remain a favored lookout over the coastline.',
   },
@@ -28,7 +28,7 @@ export const heritageSites = [
     id: 'balungao-hot-spring',
     name: 'Balungao Hot Spring',
     era: 'Natural landmark',
-    image: '/src/assets/balungao-hot-spring.jpg',
+    image: '/balungao-hot-spring.jpg',
     description:
       'Set at the foot of Mt. Balungao, these mineral-rich hot and cold springs have long been a rest stop for travelers and a communal bathing site for nearby towns — a tradition of wellness rooted in the land itself.',
   },
@@ -36,7 +36,7 @@ export const heritageSites = [
     id: 'hundred-islands',
     name: 'Hundred Islands National Park',
     era: 'Philippines\u2019 first national park, declared 1940',
-    image: '/src/assets/hundred-islands.jpg',
+    image: '/hero-hundred-islands.jpg',
     description:
       'A cluster of limestone islands scattered across Lingayen Gulf near Alaminos, shaped by centuries of tide and weather. Long before it was a tourist destination, it was a fishing ground and a natural boundary marker for coastal communities.',
   },
