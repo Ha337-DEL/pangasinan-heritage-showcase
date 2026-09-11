@@ -13,7 +13,7 @@ export default function HeroSection() {
   return (
     <section id="top" className="hero">
       <div className="hero__media">
-        <Image src={hero.image} alt="Hundred Islands, Lingayen Gulf, Pangasinan" ratio="auto" />
+        <Image src={hundred-islands.jpg} alt="Hundred Islands, Lingayen Gulf, Pangasinan" ratio="auto" />
       </div>
       <div className="hero__scrim" />
       <div className="wrap hero__content">
